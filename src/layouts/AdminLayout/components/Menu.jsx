@@ -14,7 +14,7 @@ export function MenuItem({ data }) {
                     <Button
                         leftIcon={data.icon}
                         className={clsx(
-                            'w-full text-left text-xl transition-colors hover:bg-violet hover:text-white',
+                            'w-full text-left text-xl transition-all hover:pl-7',
                             {
                                 'text-gray-91': !isActive,
                                 'bg-violet text-white': isActive
@@ -30,21 +30,21 @@ export function MenuItem({ data }) {
         return (
             <Button
                 leftIcon={data.icon}
-                className='w-full text-left text-xl text-gray-91 transition-colors'
+                className='w-full text-left text-xl text-gray-91 transition-all hover:pl-7'
             >
                 {data.name}
             </Button>
         )
 }
 
-function MenuParen({ data }) {
+function MenuParent({ data }) {
     const [toggle, setToggle] = useState(false)
 
     return (
         <>
             <Button
                 leftIcon={data.icon}
-                className='w-full text-left text-xl text-gray-91 hover:bg-slate-100'
+                className='w-full text-left text-xl text-gray-91 transition-all hover:pl-7'
                 rightIcon={toggle ? <AiOutlineDown /> : <AiOutlineRight />}
                 onClick={() => setToggle(!toggle)}
             >
@@ -63,7 +63,7 @@ function Menu({ data }) {
         <>
             {data.map((item, index) =>
                 item.children ? (
-                    <MenuParen key={index} data={item} />
+                    <MenuParent key={index} data={item} />
                 ) : (
                     <MenuItem key={index} data={item} />
                 )

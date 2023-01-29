@@ -11,7 +11,7 @@ function Button({ leftIcon, rightIcon, className, children, ...props }) {
             {...props}
         >
             {leftIcon}
-            <span className='flex-1'>{children}</span>
+            <span className='flex-1 truncate'>{children}</span>
             {rightIcon}
         </button>
     )

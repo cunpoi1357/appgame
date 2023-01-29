@@ -88,7 +88,7 @@ function CauHinhWebsite() {
                     <Input className='w-full' />
                 </div>
                 <div>
-                    <h3 className='text-gray-54'>Mô tả Website</h3>
+                    <h3 className='text-gray-54'>Từ khóa tìm kiếm</h3>
                     <Input className='w-full' />
                 </div>
                 <div className='mb-10'>

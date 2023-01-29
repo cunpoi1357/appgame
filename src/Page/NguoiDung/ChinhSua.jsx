@@ -11,53 +11,53 @@ function ChinhSua() {
         <div className='flex flex-col gap-10'>
             <h3 className='text-2xl text-gray-54'>Tài khoản #1</h3>
             <div className='w-full'>
-                <table className='w-full border-collapse border-white-f8'>
+                <table className='w-full border-collapse'>
                     <tbody className='text-gray-58'>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b border-t p-4'>
+                            <td className='col-span-1 border-r border-l border-b border-t border-white-f8 p-4'>
                                 Người dùng:
                             </td>
-                            <td className='col-span-2 border-r border-b border-t p-4'>
+                            <td className='col-span-2 border-r border-b border-t border-white-f8 p-4'>
                                 #1
                             </td>
                         </tr>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b p-4'>
+                            <td className='col-span-1 border-r border-l border-b border-white-f8 p-4'>
                                 Họ tên:
                             </td>
-                            <td className='col-span-2 border-r border-b p-4'>
+                            <td className='col-span-2 border-r border-b border-white-f8 p-4'>
                                 Nguyễn Văn A
                             </td>
                         </tr>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b p-4'>
+                            <td className='col-span-1 border-r border-l border-b border-white-f8 p-4'>
                                 Email:
                             </td>
-                            <td className='col-span-2 border-r border-b p-3'></td>
+                            <td className='col-span-2 border-r border-b border-white-f8 p-3'></td>
                         </tr>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b p-3'>
+                            <td className='col-span-1 border-r border-l border-b border-white-f8 p-3'>
                                 Số điện thoại:
                             </td>
-                            <td className='col-span-2 border-r border-b p-3'></td>
+                            <td className='col-span-2 border-r border-b border-white-f8 p-3'></td>
                         </tr>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b p-3'>
+                            <td className='col-span-1 border-r border-l border-b border-white-f8 p-3'>
                                 Số dư:
                             </td>
-                            <td className='col-span-2 border-r border-b p-3'></td>
+                            <td className='col-span-2 border-r border-b border-white-f8 p-3'></td>
                         </tr>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b p-3'>
+                            <td className='col-span-1 border-r border-l border-b border-white-f8 p-3'>
                                 Ngày tạo tài khoản:
                             </td>
-                            <td className='col-span-2 border-r border-b p-4'></td>
+                            <td className='col-span-2 border-r border-b border-white-f8 p-4'></td>
                         </tr>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b p-4'>
+                            <td className='col-span-1 border-r border-l border-b border-white-f8 p-4'>
                                 Chat cộng đồng:
                             </td>
-                            <td className='col-span-2 border-r border-b p-2'>
+                            <td className='col-span-2 border-r border-b border-white-f8 p-2'>
                                 <Select className='w-64'>
                                     <option>Mở</option>
                                     <option>Tắt</option>
@@ -65,20 +65,20 @@ function ChinhSua() {
                             </td>
                         </tr>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b p-4'>
+                            <td className='col-span-1 border-r border-l border-b border-white-f8 p-4'>
                                 Loại tài khoản:
                             </td>
-                            <td className='col-span-2 border-r border-b p-2'>
+                            <td className='col-span-2 border-r border-b border-white-f8 p-2'>
                                 <Select className='w-64'>
                                     <option>Công tác viên</option>
                                 </Select>
                             </td>
                         </tr>
                         <tr className='grid grid-cols-3'>
-                            <td className='col-span-1 border-r border-l border-b p-4'>
+                            <td className='col-span-1 border-r border-l border-b border-white-f8 p-4'>
                                 Khóa tài khoản:
                             </td>
-                            <td className='col-span-2 border-r border-b p-2'>
+                            <td className='col-span-2 border-r border-b border-white-f8 p-2'>
                                 <Select className='w-64'>
                                     <option>Mở</option>
                                     <option>Tắt</option>

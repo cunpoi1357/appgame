@@ -1,5 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 
+import { AppProvider } from './Context/AppConext'
+
 import DefaultLayout from './layouts/DefaultLayout'
 import AdminLayout from './layouts/AdminLayout'
 
@@ -19,88 +21,103 @@ import LSThayDoiSD from './Page/NguoiDung/LSThayDoiSD'
 import Game from './Page/NguoiDung/Game'
 import BotTuDong from './Page/BotTuDong'
 import ChatBox from './Page/ChatBox'
+import Login from './Page/Login'
+import Register from './Page/Register'
 
 const router = createBrowserRouter(
     [
         {
-            element: <DefaultLayout />,
+            element: <AppProvider />,
             children: [
                 {
-                    path: '/',
-                    element: <Home />
-                }
-            ]
-        },
-        {
-            path: 'admin',
-            element: <AdminLayout />,
-            children: [
-                {
-                    index: true,
-                    element: <Dashboard />
-                },
-                {
-                    path: 'nguoi-dung',
+                    element: <DefaultLayout />,
                     children: [
                         {
-                            path: 'danh-sach',
-                            element: <DSNguoiDung />
+                            path: '/',
+                            element: <Home />
                         },
                         {
-                            path: 'chinh-sua',
-                            element: <ChinhSuaNguoiDung />
+                            path: '/login',
+                            element: <Login />
                         },
                         {
-                            path: 'lich-su',
-                            element: <LSThayDoiSD />
-                        },
-                        {
-                            path: 'game',
-                            element: <Game />
+                            path: '/register',
+                            element: <Register />
                         }
                     ]
                 },
                 {
-                    path: 'lich-su-rut-xu',
-                    element: <LichSuRutXu />
-                },
-                {
-                    path: 'chan-le',
+                    path: 'admin',
+                    element: <AdminLayout />,
                     children: [
-                        { path: '', element: <PhienChanLe /> },
                         {
-                            path: 'nguoi-choi',
-                            element: <NguoiChoi />
+                            index: true,
+                            element: <Dashboard />
                         },
                         {
-                            path: 'top',
-                            element: <Top />
+                            path: 'nguoi-dung',
+                            children: [
+                                {
+                                    path: 'danh-sach',
+                                    element: <DSNguoiDung />
+                                },
+                                {
+                                    path: 'chinh-sua',
+                                    element: <ChinhSuaNguoiDung />
+                                },
+                                {
+                                    path: 'lich-su',
+                                    element: <LSThayDoiSD />
+                                },
+                                {
+                                    path: 'game',
+                                    element: <Game />
+                                }
+                            ]
+                        },
+                        {
+                            path: 'lich-su-rut-xu',
+                            element: <LichSuRutXu />
+                        },
+                        {
+                            path: 'chan-le',
+                            children: [
+                                { path: '', element: <PhienChanLe /> },
+                                {
+                                    path: 'nguoi-choi',
+                                    element: <NguoiChoi />
+                                },
+                                {
+                                    path: 'top',
+                                    element: <Top />
+                                }
+                            ]
+                        },
+                        {
+                            path: 'bot-tu-dong',
+                            element: <BotTuDong />
+                        },
+                        {
+                            path: 'ti-le-thuong',
+                            element: <TiLeThuong />
+                        },
+                        {
+                            path: 'nap-rut-xu',
+                            element: <NapRutXu />
+                        },
+                        {
+                            path: 'quan-li-may-chu',
+                            element: <QuanLiMayChu />
+                        },
+                        {
+                            path: 'cau-hinh-website',
+                            element: <CauHinhWebsite />
+                        },
+                        {
+                            path: 'chat-box',
+                            element: <ChatBox />
                         }
                     ]
-                },
-                {
-                    path: 'bot-tu-dong',
-                    element: <BotTuDong />
-                },
-                {
-                    path: 'ti-le-thuong',
-                    element: <TiLeThuong />
-                },
-                {
-                    path: 'nap-rut-xu',
-                    element: <NapRutXu />
-                },
-                {
-                    path: 'quan-li-may-chu',
-                    element: <QuanLiMayChu />
-                },
-                {
-                    path: 'cau-hinh-website',
-                    element: <CauHinhWebsite />
-                },
-                {
-                    path: 'chat-box',
-                    element: <ChatBox />
                 }
             ]
         }

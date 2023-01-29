@@ -10,6 +10,7 @@ import Table from '~/components/Table'
 import Modal from '~/components/Modal'
 import server from '~/constants/server'
 import { Link } from 'react-router-dom'
+import Pagination from '~/components/Pagination'
 
 function Action({ id }) {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -207,6 +208,9 @@ function DSNguoiDung() {
                 </Select>
             </div>
             <Table header={header} data={data} />
+            <div className='-m-4 rounded-b-lg bg-white-f8 p-4'>
+                <Pagination onChange={data => console.log(data)} />
+            </div>
         </div>
     )
 }

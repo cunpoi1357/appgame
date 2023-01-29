@@ -3,7 +3,6 @@ import { FiHome } from 'react-icons/fi'
 import { AiOutlineAppstore, AiOutlineSetting } from 'react-icons/ai'
 import { BsPlay, BsSquare } from 'react-icons/bs'
 
-import Button from '~/components/Button'
 import Menu, { MenuItem } from './Menu'
 
 const manageMenu = [

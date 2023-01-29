@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { AiFillPlusCircle } from 'react-icons/ai'
 import { BsFillTrashFill } from 'react-icons/bs'
-import Button from '~/components/Button'
-import Input from '~/components/Input'
 import { v4 as uuidv4 } from 'uuid'
+
+import Input from '~/components/Input'
+import Button from '~/components/Button'
 
 function TiLeThuong() {
     const [radios, setRadios] = useState([
